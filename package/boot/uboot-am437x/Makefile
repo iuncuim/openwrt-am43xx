@@ -24,7 +24,7 @@ endef
 
 define U-Boot/am43xx_evm
   NAME:=AM43xx EVM
-  BUILD_DEVICES:=am43xx-evm
+  BUILD_DEVICES:=am437x-sk-evm
 endef
 
 UBOOT_TARGETS:=am43xx_evm

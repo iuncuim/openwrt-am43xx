@@ -41,11 +41,18 @@ define Device/Default
   SUPPORTED_DEVICES = $$(DEVICE_DTS)
 endef
 
-define Device/am43xx-evm
+define Device/am43xx-idk-evm
   DEVICE_TITLE := TI AM437x IDK EVM
   DEVICE_DTS := am437x-idk-evm
 endef
 
-TARGET_DEVICES += am43xx-evm
+TARGET_DEVICES += am43xx-idk-evm
+
+define Device/am437x-sk-evm
+  DEVICE_TITLE := TI AM437x Starter Kit
+  DEVICE_DTS := am437x-sk-evm
+endef
+
+TARGET_DEVICES += am437x-sk-evm
 
 $(eval $(call BuildImage))
